@@ -8,23 +8,23 @@
 <body>
 
 <header class="header">
-  <img src="./eisenhower-matrix.jpg" alt="">
-  <a class="link"
+  <img class="header__img" src="./eisenhower-matrix.jpg" alt="">
+  <a class="header__link"
      href="https://goal-life.com/page/method/matrix-eisenhower" target="_blank">Want more details?</a>
 </header>
 
 <article class="container">
 
-  <section id="section-list">
-    <label for="new-task">Add Item</label>
-    <input id="new-task" type="text">
-    <button>Add</button>
+  <section class="add-block" id="section-list">
+    <label class="add-block__label" for="new-task">Add Item</label>
+    <input class="add-block__task"id="new-task" type="text">
+    <button class="add-block__button" >Add</button>
   </section>
 
-  <section>
-    <h3>Todo</h3>
-    <ul id="incomplete-tasks">
-      <li>
+  <section class="todo-block">
+    <h3 class="todo-block__title">Todo</h3>
+    <ul class="todo-block__list" id="incomplete-tasks">
+      <li class="todo-block__item">
         <input type="checkbox">
         <label class="task">Pay Bills</label>
         <input type="text">
@@ -33,7 +33,7 @@
           <img src="./remove.svg" alt="remove-icon">
         </button>
       </li>
-      <li class="edit-mode">
+      <li class="todo-block__item edit-mode">
         <input type="checkbox">
         <label class="task">Go Shopping</label>
         <input type="text" value="Go Shopping" class="task">
@@ -45,10 +45,10 @@
     </ul>
   </section>
 
-  <section>
-    <h3>Completed</h3>
-    <ul id="completed-tasks">
-      <li>
+  <section class="completed-block">
+    <h3 class="completed-block__title">Completed</h3>
+    <ul class="completed-block__list" id="completed-tasks">
+      <li class="completed-block__item">
         <input type="checkbox" checked>
         <label class="task">See the Doctor</label>
         <input type="text">
